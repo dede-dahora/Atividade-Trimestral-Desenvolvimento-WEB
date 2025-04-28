@@ -1,167 +1,177 @@
-/* Reset e estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-.container {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  
+  .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
-}
-
-/* Header */
-header {
-    background-color: #2c3e50;
-    color: white;
+  }
+  
+  li {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-item:hover {
+    cursor: pointer;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+  
+  header {
+    background-color: #ff4d6d;
+    color: #ffffff;
     text-align: center;
     padding: 40px 0;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-}
-
-/* Navegação */
-nav {
-    background-color: #34495e;
-}
-
-nav ul {
+    color: #ffffff;
+  }
+  
+  nav {
+    background-color: #000000;
+  }
+  
+  nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-}
-
-nav a {
-    color: white;
+  }
+  
+  nav a {
+    color: #ffffff;
     text-decoration: none;
     padding: 15px 20px;
     display: block;
-}
-
-nav a:hover {
-    background-color: #2c3e50;
-}
-
-/* Seções */
-section {
+  }
+  
+  nav a:hover {
+    background-color: #ff4d6d;
+  }
+  
+  section {
     margin: 40px 0;
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-h2 {
-    color: #2c3e50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000000;
+  }
+  
+  h2 {
+    color: #ff4d6d;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
-}
-
-/* Depoimentos */
-.depoimentos {
+    border-bottom: 2px solid #000000;
+  }
+  
+  .depoimentos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-}
-
-.depoimento {
+  }
+  
+  .depoimento {
     text-align: center;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     border-radius: 5px;
-}
-
-.depoimento img {
+    border: 2px solid #ff4d6d;
+  }
+  
+  .depoimento img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-}
-
-blockquote {
+    border: 3px solid #000000;
+  }
+  
+  blockquote {
     font-style: italic;
     margin: 15px 0;
-    color: #555;
-}
-
-/* Galeria */
-.galeria-fotos {
+    color: #000000;
+  }
+  
+  .galeria-fotos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
-}
-
-.galeria-fotos img {
+  }
+  
+  .galeria-fotos img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     transition: transform 0.3s;
-}
-
-.galeria-fotos img:hover {
+    border: 3px solid #ff4d6d;
+  }
+  
+  .galeria-fotos img:hover {
     transform: scale(1.03);
-}
-
-/* Projeto */
-.projeto-descricao {
+    border-color: #000000;
+  }
+  
+  .projeto-descricao {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.projeto-img {
+  }
+  
+  .projeto-img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-}
-
-/* Lista de materiais */
-.materiais-lista {
+    border: 2px solid #000000;
+  }
+  
+  .materiais-lista {
     list-style-position: inside;
     padding-left: 20px;
-}
-
-.materiais-lista li {
+  }
+  
+  .materiais-lista li {
     margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: #2c3e50;
-    color: white;
+    color: #000000;
+  }
+  
+  footer {
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
     
     .depoimentos {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-}
-
-.img1{
+  }
+  
+  .img1 {
     width: 600px;
     height: 600px;
-    
-}
+    border: 3px solid #ff4d6d;
+  }
