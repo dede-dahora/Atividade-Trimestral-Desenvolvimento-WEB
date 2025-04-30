@@ -5,10 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #000000;
-  background-color: #ffffff;
+    font-family: "Cal Sans", sans-serif;
 }
 
 .container {
@@ -16,6 +13,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
+}
+
+.container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li {
@@ -165,25 +168,29 @@ footer {
   width: 600px;
   height: 600px;
   border: 3px solid #ff4d6d;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   nav ul {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
   
   .depoimentos {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .depoimento img {
-      width: 200px;
-      height: 200px;
+    width: 200px;
+    height: 200px;
   }
 
   .img1 {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
