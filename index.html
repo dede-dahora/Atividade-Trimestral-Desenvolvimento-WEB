@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipe Eletrocapivaras</title>
-    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .zoom {
+            transition: transform .2s;
+        }
+        .zoom:hover {
+            transform: scale(1.05);
+        }
+        .img1 {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform .2s, box-shadow .2s;
+        }
+        .img1:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Equipe Eletrocapivaras</h1>
+            <h1>Equipe Eletrocapivaras 🦝</h1>
             <p>Competição LEGO First League - 2025</p>
         </div>
     </header>
@@ -20,57 +40,67 @@
     <nav>
         <div class="container">
             <ul>
-                <li class="zoom"><a href="#sobre">Sobre o Projeto</a></li>
-                <li class="zoom"><a href="#equipe">Nossa Equipe</a></li>
-                <li class="zoom"><a href="#materiais">Materiais</a></li>
-                <li class="zoom"><a href="#galeria">Galeria</a></li>
+                <li class="zoom"><a href="#sobre">Sobre & Equipe 👥</a></li>
+                <li class="zoom"><a href="#projeto">Projeto 🚀</a></li>
+                <li class="zoom"><a href="#galeria">Galeria 📸</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="container">
         <section id="sobre">
-            <h2>Sobre o Projeto</h2>
+            <h2>👥 Sobre & Equipe</h2>
             <div class="projeto-descricao">
-                <p>Foto do projeto em Desenvolvimento</p>
-                <img src="fotos/trabalho.webp" style="max-width: 400px; max-height: 450px;">   
-            </div>
-        </section>
-
-        <section id="equipe">
-            <h2>Nossa Equipe</h2>
-            <div class="depoimentos">
-              
-                <div class="depoimento">
-                    <img class="img1" src=fotos/grupo.webp alt="">
-                    <h3>Ligia, Miguel, Petro, Sofia e Theo</h3>
+                <div class="equipe-info">
+                    <h3>Nossa Equipe</h3>
+                    <p><strong>Lígia, Miguel, Petro, Sofia e Theo</strong></p>
                     <blockquote>"O nosso projeto está sendo criativo e divertido para todos os membros de nossa equipe!"</blockquote>
                 </div>
-                
-              
+                <img class="img1 zoom" src="fotos/grupo.webp" alt="Foto da equipe" style="max-width: 400px; max-height: 450px;">   
             </div>
         </section>
 
-        <section id="materiais">
-            <h2>Materiais Utilizados</h2>
-            <ul class="materiais-lista">
-                <li>LEGO</li>
-                <li>Canetinhas</li>
-                <li>Lápis</li>
-                <li>Tesouras</li>
-               
-            </ul>
+        <section id="projeto">
+            <h2>🚀 Projeto & Materiais</h2>
+            <div class="projeto-content">
+                <div class="projeto-info">
+                    <h3>Sobre o Projeto</h3>
+                    <p>Foto do projeto em Desenvolvimento</p>
+                    <img class="img1 zoom" src="fotos/trabalho.webp" alt="Projeto em desenvolvimento" style="max-width: 400px; max-height: 450px;">
+                </div>
+                <div class="materiais-info">
+                    <h3>🛠️ Materiais Utilizados</h3>
+                    <ul class="materiais-lista">
+                        <li class="zoom">LEGO</li>
+                        <li class="zoom">Canetinhas</li>
+                        <li class="zoom">Lápis</li>
+                        <li class="zoom">Tesouras</li>
+                        <li class="zoom">Cola</li>
+                        <li class="zoom">Papelão</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="galeria">
-            <h2>Galeria de Fotos</h2>
+            <h2>📸 Galeria de Fotos</h2>
             <div class="galeria-fotos">
-                <img src=data:data:image/png;base64,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
-
-                <img class="img1" src=fotos/grupo.webp alt="">
-                <img class="img1" src=fotos/trabalho.webp alt="">
-                <img class="img1" src=fotos/grupo.webp alt="">
-               
+                <div class="galeria-item zoom">
+                    <img class="img1" src="fotos/grupo.webp" alt="Equipe trabalhando">
+                    <p>Equipe reunida</p>
+                </div>
+                <div class="galeria-item zoom">
+                    <img class="img1" src="fotos/trabalho.webp" alt="Projeto em andamento">
+                    <p>Trabalho em progresso</p>
+                </div>
+                <div class="galeria-item zoom">
+                    <img class="img1" src="fotos/grupo.webp" alt="Equipe planejando">
+                    <p>Brainstorming</p>
+                </div>
+                <div class="galeria-item zoom">
+                    <img class="img1" src="fotos/trabalho.webp" alt="Detalhes do projeto">
+                    <p>Detalhes do protótipo</p>
+                </div>
             </div>
         </section>
     </main>
@@ -78,6 +108,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Equipe Eletrocapivaras - Todos os direitos reservados</p>
+            <p>🦝 Com amor e peças de LEGO 🧱</p>
         </div>
     </footer>
 </body>
